@@ -24,6 +24,8 @@ public class CircleTests
     [Theory]
     [InlineData(3.0, 28.274)]
     [InlineData(1.5, 7.069)]
+    [InlineData(1000000, 3141592653589.793)]
+    [InlineData(0.5, 0.785)]
     public void GetArea_WithValidCircle_ReturnsExpectedArea(
         double radiusValue, double expectedArea)
     {
