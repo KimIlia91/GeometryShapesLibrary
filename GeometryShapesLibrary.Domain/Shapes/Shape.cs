@@ -14,7 +14,7 @@ public abstract class Shape
     /// Shape class constructor.
     /// </summary>
     /// <param name="area">Area of ​​the shape.</param>
-    public Shape(
+    protected Shape(
         double area)
     {
         Area = area;
