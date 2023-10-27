@@ -4,9 +4,9 @@
 	- [Shape](#shape)
 	- [Circle](#circle)
 	- [Triangel](#triangel)
-- [ValueObjects](#value-objects)
-	- [Radius](#radius)
-	- [Sides](#sides)
+	- [ValueObjects](#valueobjects)
+		- [Radius](#radius)
+		- [Sides](#sides)
 - [Common](#common)
 	- [ValueObject](#valueobject)
 
@@ -72,7 +72,7 @@
 ћетод, провер€ющий €вл€етс€ ли треугольник правильным и возвращает `false`
 если треугольник неправильный иначе `true`.
 
-# ValueObjects
+## ValueObjects
 
 ## Radius
 
