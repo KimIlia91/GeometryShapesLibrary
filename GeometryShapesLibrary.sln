@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapesLibrary.Tests
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{506D6437-0C33-4A91-9CFB-1A14716E9085}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapesLibrary.ConsoleApp", "GeometryShapesLibrary.ConsoleApp\GeometryShapesLibrary.ConsoleApp\GeometryShapesLibrary.ConsoleApp.csproj", "{ACF30E47-C0FF-4BE0-AD4D-F1A47A7A1C50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{DAA3D44E-F343-415B-8D17-3EBA6042C91D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAA3D44E-F343-415B-8D17-3EBA6042C91D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAA3D44E-F343-415B-8D17-3EBA6042C91D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF30E47-C0FF-4BE0-AD4D-F1A47A7A1C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF30E47-C0FF-4BE0-AD4D-F1A47A7A1C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF30E47-C0FF-4BE0-AD4D-F1A47A7A1C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF30E47-C0FF-4BE0-AD4D-F1A47A7A1C50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{29DD12A0-5707-4043-9602-5E35BDBF0F00} = {E1ED5874-32AA-4106-B726-EE947C96B94A}
 		{1C84CF61-CE97-4AE3-9102-6D3E0CF01A06} = {09D3906D-8711-4313-ADB2-48C71939FF92}
 		{DAA3D44E-F343-415B-8D17-3EBA6042C91D} = {1C84CF61-CE97-4AE3-9102-6D3E0CF01A06}
+		{ACF30E47-C0FF-4BE0-AD4D-F1A47A7A1C50} = {506D6437-0C33-4A91-9CFB-1A14716E9085}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC2A2F72-BF39-479B-B377-44C1CE3E1B23}
