@@ -5,13 +5,13 @@ namespace GeometryShapesLibrary.Tests;
 public class CircleTests
 {
     [Theory]
-    [InlineData(3.0, 28.274)]
-    [InlineData(1.5, 7.069)]
-    [InlineData(0.1, 0.0)]
-    [InlineData(100, 0.0)]
-    [InlineData(1000000, 0.0)]
+    [InlineData(3.0)]
+    [InlineData(1.5)]
+    [InlineData(0.1)]
+    [InlineData(100)]
+    [InlineData(1000000)]
     public void CreateCircle_WithValidRadius_ReturnsCircleObject(
-        double radiusValue, double expectedArea)
+        double radiusValue)
     {
         // Act
         var circle = Circle.Create(radiusValue);
