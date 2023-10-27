@@ -66,4 +66,15 @@ public class TriangleTests
         // Act & Assert
         Assert.Throws<ArgumentException>(() => Triangle.Create(sideA, sideB, sideC));
     }
+
+    [Theory]
+    [InlineData(1.0, 2.0, 3.0)] 
+    [InlineData(0.0, 0.0, 0.0)] 
+    [InlineData(5.0, 10.0, 25.0)] 
+    public void Create_WithInvalidTriangle_ThrowsArgumentException(
+        double sideA, double sideB, double sideC)
+    {
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => Triangle.Create(sideA, sideB, sideC));
+    }
 }

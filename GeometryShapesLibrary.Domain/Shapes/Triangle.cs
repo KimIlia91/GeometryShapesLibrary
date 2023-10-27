@@ -1,4 +1,5 @@
-﻿using GeometryShapesLibrary.Domain.Shapes.ValueObjects;
+﻿using GeometryShapesLibrary.Domain.Common.Resources;
+using GeometryShapesLibrary.Domain.Shapes.ValueObjects;
 
 namespace GeometryShapesLibrary.Domain.Shapes;
 
@@ -35,11 +36,15 @@ public class Triangle : Shape
     /// <param name="sideB">Length of side B.</param>
     /// <param name="sideC">Length of side C.</param>
     /// <returns>An instance of the Triangle class.</returns>
+    /// <exception cref="ArgumentException">Thrown when the provided side lengths do not form a valid triangle.</exception>
     public static Triangle Create(
         double sideA,
         double sideB,
         double sideC)
     {
+        if (!IsValidTriangle(sideA, sideB, sideC))
+            throw new ArgumentException(ErrorResources.InvalidTriangle);
+
         var sides = Sides.Create(sideA, sideB, sideC);
         var area = GetArea(sides);
         var isRegularTriangle = IsRightTriangle(sides);
@@ -67,11 +72,28 @@ public class Triangle : Shape
         return Math.Sqrt(s * (s - sides.SideA) * (s - sides.SideB) * (s - sides.SideC));
     }
 
+    /// <summary>
+    /// Checks is a right triangle.
+    /// </summary>
+    /// <param name="sides">An object containing the lengths of the three sides of the triangle.</param>
+    /// <returns>True if the triangle is a right triangle; otherwise, false.</returns>
     private static bool IsRightTriangle(
         Sides sides)
     {
         double[] sidesArr = { sides.SideA, sides.SideB, sides.SideC };
         Array.Sort(sidesArr);
         return Math.Pow(sidesArr[0], 2) + Math.Pow(sidesArr[1], 2) == Math.Pow(sidesArr[2], 2);
+    }
+
+    /// <summary>
+    /// Checks if the given side lengths can form a valid triangle.
+    /// </summary>
+    /// <param name="sideA">Length of side A.</param>
+    /// <param name="sideB">Length of side B.</param>
+    /// <param name="sideC">Length of side C.</param>
+    /// <returns>True if the side lengths can form a valid triangle; otherwise, false.</returns>
+    private static bool IsValidTriangle(double sideA, double sideB, double sideC)
+    {
+        return sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA;
     }
 }

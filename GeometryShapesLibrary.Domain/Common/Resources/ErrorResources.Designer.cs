@@ -61,6 +61,15 @@ namespace GeometryShapesLibrary.Domain.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Треугольник с указанными сторонами не может быть создан.
+        /// </summary>
+        internal static string InvalidTriangle {
+            get {
+                return ResourceManager.GetString("InvalidTriangle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Число должно быть положительным.
         /// </summary>
         internal static string NegativeNumber {
