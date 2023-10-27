@@ -1,4 +1,4 @@
-﻿using GeometryShapesLibrary.Domain.Shapes.Circle.ValueObjects;
+﻿using GeometryShapesLibrary.Domain.Shapes.ValueObjects;
 
 namespace GeometryShapesLibrary.Domain.Shapes;
 
