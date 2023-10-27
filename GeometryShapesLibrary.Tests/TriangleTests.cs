@@ -49,7 +49,7 @@ public class TriangleTests
         var triangle = Triangle.Create(sideA, sideB, sideC);
 
         // Act
-        var isRightTriangle = triangle.IsRegularTriangle();
+        var isRightTriangle = triangle.IsRegularTriangle;
 
         // Assert
         Assert.Equal(expectedIsRightTriangle, isRightTriangle);
