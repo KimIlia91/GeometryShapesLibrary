@@ -17,7 +17,7 @@ public class Triangle : Shape
     /// </summary>
     /// <param name="sides">The sides of the triangle.</param>
     /// <param name="area">The area of the triangle.</param>
-    public Triangle(
+    private Triangle(
         Sides sides,
         double area) : base(area)
     {
