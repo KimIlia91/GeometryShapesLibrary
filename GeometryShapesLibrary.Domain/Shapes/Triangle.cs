@@ -51,4 +51,15 @@ public class Triangle : Shape
         double s = (sides.SideA + sides.SideB + sides.SideC) / 2;
         return Math.Sqrt(s * (s - sides.SideA) * (s - sides.SideB) * (s - sides.SideC));
     }
+
+    /// <summary>
+    /// Determines whether the triangle is right-angled.
+    /// </summary>
+    /// <returns>True if the triangle is right-angled, otherwise False.</returns>
+    public bool IsRegularTriangle()
+    {
+        double[] sides = { Sides.SideA, Sides.SideB, Sides.SideC };
+        Array.Sort(sides);
+        return Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2) == Math.Pow(sides[2], 2);
+    }
 }
