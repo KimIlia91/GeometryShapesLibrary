@@ -36,7 +36,7 @@
 
 #### Свойства
 
-- `public Radius Radius { get; }`: Свойство, радиус круга.
+- `public Radius Radius { get; private set; }`: Свойство, радиус круга.
 
 
 #### Методы
@@ -55,8 +55,8 @@
 
 #### Свойства
 
-- `public Sides Sides { get; }`: Свойство, представляющее стороны треугольник.
-- `public bool IsRegularTriangle { get; }`: Свойство, представляющее является ли треугольник прямоугольным.
+- `public Sides Sides { get; private set; }`: Свойство, представляющее стороны треугольник.
+- `public bool IsRegularTriangle { get; private set; }`: Свойство, представляющее является ли треугольник прямоугольным.
 
 #### Методы
 
@@ -85,7 +85,7 @@
 
 #### Свойства
 
-- `public double Value { get; }`: Свойство, представляющее значение радиуса.
+- `public double Value { get; private set; }`: Свойство, представляющее значение радиуса.
 
 #### Методы
 
@@ -109,9 +109,9 @@
 
 #### Свойства
 
-- `public double SideA { get; }`: Свойство, представляющее сторону A.
-- `public double SideB { get; }`: Свойство, представляющее сторону B.
-- `public double SideC { get; }`: Свойство, представляющее сторону C.
+- `public double SideA { get; private set; }`: Свойство, представляющее сторону A.
+- `public double SideB { get; private set; }`: Свойство, представляющее сторону B.
+- `public double SideC { get; private set; }`: Свойство, представляющее сторону C.
 
 #### Методы
 
