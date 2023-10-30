@@ -52,13 +52,12 @@ public class Triangle : Shape
     }
 
     /// <summary>
-    /// Calculate the area of a triangle.
+    /// Returns a string representation of the triangle.
     /// </summary>
-    /// <param name="sides">An object containing the lengths of the three sides of the triangle.</param>
-    /// <returns>The calculated area of the triangle.</returns>
+    /// <returns>Returns a string representation of the triangle.</returns>
     public override string ToString()
     {
-        return $"{GetType().Name}, Area: {Area}, Is regular triangel: {IsRegularTriangle}";
+        return $"Type: {GetType().Name}, Area: {Area}, Is regular triangel: {IsRegularTriangle}";
     }
 
     /// <summary>
