@@ -10,7 +10,7 @@ public class Circle : Shape
     /// <summary>
     /// Radius of ​​the circle.
     /// </summary>
-    public Radius Radius { get; }
+    public Radius Radius { get; private set; }
 
     /// <summary>
     /// Circle class constructor.

@@ -11,7 +11,7 @@ public class Radius : ValueObject
     /// <summary>
     /// Value of the radius.
     /// </summary>
-    public double Value { get; }
+    public double Value { get; private set; }
 
     /// <summary>
     /// Constructor of the radius class.

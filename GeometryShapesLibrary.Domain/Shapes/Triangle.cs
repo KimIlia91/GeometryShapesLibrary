@@ -11,9 +11,9 @@ public class Triangle : Shape
     /// <summary>
     /// An instance of the Sides class representing the sides of a triangle.
     /// </summary>
-    public Sides Sides { get; }
+    public Sides Sides { get; protected set; }
 
-    public bool IsRegularTriangle { get; }
+    public bool IsRegularTriangle { get; protected set; }
 
     /// <summary>
     /// Constructor of the Triangle class.

@@ -8,7 +8,7 @@ public abstract class Shape
     /// <summary>
     /// Area of ​​the shape.
     /// </summary>
-    public double Area { get; }
+    public double Area { get; private set; }
 
     /// <summary>
     /// Shape class constructor.
