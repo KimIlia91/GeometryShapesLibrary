@@ -23,5 +23,5 @@ CLI
 ```cli 
 	Type: Circle, Area: 78,53981633974483
 
-	TYpe: Triangle, Area: 10,825317547305483, Is regular triangel: False
+	Type: Triangle, Area: 10,825317547305483, Is regular triangel: False
 ```
