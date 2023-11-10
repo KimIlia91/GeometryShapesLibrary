@@ -79,8 +79,12 @@ public class Triangle : Shape
     private static bool IsRightTriangle(
         Sides sides)
     {
-        double[] sidesArr = { sides.SideA, sides.SideB, sides.SideC };
-        Array.Sort(sidesArr);
+        var sidesArr = sides
+            .GetEqualityComponents()
+            .Select(Convert.ToDouble)
+            .OrderBy(x => x)
+            .ToArray();
+
         return Math.Pow(sidesArr[0], 2) + Math.Pow(sidesArr[1], 2) == Math.Pow(sidesArr[2], 2);
     }
 

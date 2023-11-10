@@ -58,7 +58,7 @@ public class Sides : ValueObject
         if (sideC <= 0)
             throw new ArgumentException(ErrorResources.NegativeNumber, nameof(sideC));
 
-        return new Sides(sideA, sideB, sideC);
+        return new(sideA, sideB, sideC);
     }
 
     /// <summary>

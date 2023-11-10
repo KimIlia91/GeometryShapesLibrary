@@ -10,7 +10,10 @@ public class TriangleTests
     [InlineData(1.0, 1.0, 1.0, 0.433)]
     [InlineData(3.0, 3.0, 4.0, 4.472)]
     public void GetArea_WithValidTriangle_ReturnsExpectedArea(
-    double sideA, double sideB, double sideC, double expectedArea)
+        double sideA, 
+        double sideB, 
+        double sideC, 
+        double expectedArea)
     {
         // Arrange
         var triangle = Triangle.Create(sideA, sideB, sideC);
