@@ -1,4 +1,6 @@
-﻿using GeometryShapesLibrary.Domain.Shapes;
+﻿using GeometryShapesLibrary.Domain.Common;
+using GeometryShapesLibrary.Domain.Common.Exceptions;
+using GeometryShapesLibrary.Domain.Shapes;
 
 namespace GeometryShapesLibrary.Tests;
 
@@ -67,7 +69,7 @@ public class TriangleTests
        double sideA, double sideB, double sideC)
     {
         // Act & Assert
-        Assert.Throws<ArgumentException>(() => Triangle.Create(sideA, sideB, sideC));
+        Assert.Throws<InvalidTriangleException>(() => Triangle.Create(sideA, sideB, sideC));
     }
 
     [Theory]
@@ -78,6 +80,6 @@ public class TriangleTests
         double sideA, double sideB, double sideC)
     {
         // Act & Assert
-        Assert.Throws<ArgumentException>(() => Triangle.Create(sideA, sideB, sideC));
+        Assert.Throws<InvalidTriangleException>(() => Triangle.Create(sideA, sideB, sideC));
     }
 }

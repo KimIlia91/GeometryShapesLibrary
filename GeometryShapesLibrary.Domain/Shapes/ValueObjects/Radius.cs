@@ -1,4 +1,5 @@
-﻿using GeometryShapesLibrary.Domain.Common.Models;
+﻿using GeometryShapesLibrary.Domain.Common.Exceptions;
+using GeometryShapesLibrary.Domain.Common.Models;
 using GeometryShapesLibrary.Domain.Common.Resources;
 
 namespace GeometryShapesLibrary.Domain.Shapes.ValueObjects;
@@ -31,7 +32,7 @@ public class Radius : ValueObject
     public static Radius Create(double value)
     {
         if (value <= 0)
-            throw new ArgumentException(ErrorResources.NegativeNumber, nameof(value));
+            throw new NegativeNumberException(ErrorResources.NegativeNumber, nameof(value));
 
         return new Radius(value);
     }

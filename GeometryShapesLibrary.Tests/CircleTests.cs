@@ -1,4 +1,5 @@
-﻿using GeometryShapesLibrary.Domain.Shapes;
+﻿using GeometryShapesLibrary.Domain.Common.Exceptions;
+using GeometryShapesLibrary.Domain.Shapes;
 
 namespace GeometryShapesLibrary.Tests;
 
@@ -49,6 +50,6 @@ public class CircleTests
         double radiusValue)
     {
         // Act & Assert
-        Assert.Throws<ArgumentException>(() => Circle.Create(radiusValue));
+        Assert.Throws<NegativeNumberException>(() => Circle.Create(radiusValue));
     }
 }

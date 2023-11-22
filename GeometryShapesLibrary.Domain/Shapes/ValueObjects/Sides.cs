@@ -1,4 +1,5 @@
-﻿using GeometryShapesLibrary.Domain.Common.Models;
+﻿using GeometryShapesLibrary.Domain.Common.Exceptions;
+using GeometryShapesLibrary.Domain.Common.Models;
 using GeometryShapesLibrary.Domain.Common.Resources;
 
 namespace GeometryShapesLibrary.Domain.Shapes.ValueObjects;
@@ -50,13 +51,13 @@ public class Sides : ValueObject
         double sideC)
     {
         if (sideA <= 0)
-            throw new ArgumentException(ErrorResources.NegativeNumber, nameof(sideA));
+            throw new NegativeNumberException(ErrorResources.NegativeNumber, nameof(sideA));
 
         if (sideB <= 0)
-            throw new ArgumentException(ErrorResources.NegativeNumber, nameof(sideB));
+            throw new NegativeNumberException(ErrorResources.NegativeNumber, nameof(sideB));
 
         if (sideC <= 0)
-            throw new ArgumentException(ErrorResources.NegativeNumber, nameof(sideC));
+            throw new NegativeNumberException(ErrorResources.NegativeNumber, nameof(sideC));
 
         return new(sideA, sideB, sideC);
     }

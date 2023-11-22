@@ -1,4 +1,5 @@
-﻿using GeometryShapesLibrary.Domain.Common.Resources;
+﻿using GeometryShapesLibrary.Domain.Common.Exceptions;
+using GeometryShapesLibrary.Domain.Common.Resources;
 using GeometryShapesLibrary.Domain.Shapes.ValueObjects;
 
 namespace GeometryShapesLibrary.Domain.Shapes;
@@ -43,7 +44,7 @@ public class Triangle : Shape
         double sideC)
     {
         if (!IsValidTriangle(sideA, sideB, sideC))
-            throw new ArgumentException(ErrorResources.InvalidTriangle);
+            throw new InvalidTriangleException(ErrorResources.InvalidTriangle);
 
         var sides = Sides.Create(sideA, sideB, sideC);
         var area = GetArea(sides);
