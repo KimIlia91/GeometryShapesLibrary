@@ -62,7 +62,7 @@
 
 - `public static Triangle Create(double sideA, double sideB, double sideC)`: 
 Статический метод для создания экземпляра класса `Triangel`. Проверяет, что стороны 
-положительны, и выбрасывает `ArgumentException` в случае невалидных данных.
+положительны, и выбрасывает исключение в случае невалидных данных.
 
 - `private static double GetArea(Sides sides)`: 
 Статический частный метод, который вычисляет площадь треугольника по 
