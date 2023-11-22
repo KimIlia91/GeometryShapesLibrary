@@ -14,6 +14,9 @@ public class Triangle : Shape
     /// </summary>
     public Sides Sides { get; protected set; }
 
+    /// <summary>
+    /// Gets or sets a value indicating whether the triangle is a regular triangle.
+    /// </summary>
     public bool IsRegularTriangle { get; protected set; }
 
     /// <summary>
